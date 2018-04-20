@@ -1,5 +1,5 @@
 {
-    "name": "alexeevdv/yii2-shortcode",
+    "name": "alexeevdv/yii2-shortcodes",
     "type": "yii2-extension",
     "authors": [
         {
@@ -7,13 +7,23 @@
             "email": "mail@alexeevdv.ru"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "alexeevdv\\shortcode\\": "src"
+            "alexeevdv\\yii\\shortcodes\\": "src"
         }
     },
-    "require": {},
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "alexeevdv/php-shortcodes": "~0.1.0"
+    },
     "require-dev": {
-        "codeception/codeception": "^2.4"
+        "codeception/codeception": "~2.4.0",
+        "yiisoft/yii2-coding-standards": "~2.0.0"
     }
 }
