@@ -1,6 +1,7 @@
 {
     "name": "alexeevdv/yii2-shortcodes",
     "type": "yii2-extension",
+    "license": "MIT",
     "authors": [
         {
             "name": "Dmitry Alekseev",
