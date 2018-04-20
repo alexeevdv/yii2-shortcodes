@@ -1,0 +1,19 @@
+{
+    "name": "alexeevdv/yii2-shortcode",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Dmitry Alekseev",
+            "email": "mail@alexeevdv.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "alexeevdv\\shortcode\\": "src"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.4"
+    }
+}
