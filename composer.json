@@ -19,12 +19,15 @@
             "alexeevdv\\yii\\shortcodes\\": "src"
         }
     },
+    "config": {
+        "sort-packages": true
+    },
     "require": {
-        "yiisoft/yii2": "~2.0.0",
-        "alexeevdv/php-shortcodes": "~0.1.0"
+        "alexeevdv/php-shortcodes": "~0.1.0",
+        "yiisoft/yii2": "^2.0"
     },
     "require-dev": {
-        "codeception/codeception": "~2.4.0",
-        "yiisoft/yii2-coding-standards": "~2.0.0"
+        "codeception/codeception": "^2.0",
+        "yiisoft/yii2-coding-standards": "^2.0"
     }
 }
