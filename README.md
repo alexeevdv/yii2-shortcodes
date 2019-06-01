@@ -6,6 +6,7 @@ yii2-shortcodes
 ![PHP 7.0](https://img.shields.io/badge/PHP-7.0-green.svg) 
 ![PHP 7.1](https://img.shields.io/badge/PHP-7.1-green.svg) 
 ![PHP 7.2](https://img.shields.io/badge/PHP-7.2-green.svg)
+![PHP 7.3](https://img.shields.io/badge/PHP-7.3-green.svg)
 
 Yii2 behavior for rendering widgets with WordPress style shortcodes.
 
@@ -30,18 +31,18 @@ to the ```require``` section of your `composer.json` file.
 
 ## Configuration
 ```php
-use alexeevdv\yii\shortcodes\ShortcodeBehavior;
-
 //...
 'components' => [
     //...
     'view' => [
-        'as shortcodeBehavior' => ShortcodeBehavior::class,
-        'map' => [
-            'feedback' => \frontend\widgets\ContactForm::class,
-            'gallery' => [ 
-                'class' => \frontend\widgets\GalleryWidget::class,
-                'theme' => 'dark',
+        'as shortcode' => [
+            'class' => alexeevdv\yii\shortcodes\ShortcodeBehavior::class,
+            'map' => [
+                'feedback' => frontend\widgets\ContactForm::class,
+                'gallery' => [ 
+                    'class' => frontend\widgets\GalleryWidget::class,
+                    'theme' => 'dark',
+                ],
             ],
         ],
     ],
